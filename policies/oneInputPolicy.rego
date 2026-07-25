@@ -1,8 +1,8 @@
 package policies
 
-default allow = false
+default allow_input = false
 
-allow if {
+allow_input if {
     input.user.roles[_] == "admin"
 }
 
